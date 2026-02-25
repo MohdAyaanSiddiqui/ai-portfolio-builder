@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import React from 'react'
-
+import Testimonials from './Testimonials/page'
 const Page = () => {
     return (
 
@@ -31,7 +31,7 @@ const Page = () => {
                             </svg>
                         </button>
                     </div>
-                    <Link href="/signup" className="flex items-center gap-2 bg-black hover:bg-black/95 text-white text-sm px-6 py-3 mt-6 rounded-lg transition cursor-pointer group">
+                    <Link href="/Signup" className="flex items-center gap-2 bg-black hover:bg-black/95 text-white text-sm px-6 py-3 mt-6 rounded-lg transition cursor-pointer group">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.18 2.344a.833.833 0 0 1 1.64 0l.875 4.632a1.67 1.67 0 0 0 1.328 1.328l4.632.876a.834.834 0 0 1 0 1.639l-4.632.875a1.67 1.67 0 0 0-1.328 1.329l-.876 4.631a.834.834 0 0 1-1.638 0l-.876-4.631a1.67 1.67 0 0 0-1.328-1.329l-4.632-.875a.833.833 0 0 1 0-1.639l4.632-.876a1.67 1.67 0 0 0 1.328-1.328zm7.487-.676v3.333m1.666-1.669H15M3.333 18.333a1.667 1.667 0 1 0 0-3.333 1.667 1.667 0 0 0 0 3.333" /></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h20v20H0z" /></clipPath></defs></svg>
                         <div className="relative overflow-hidden">
                             <span className="block transition-transform duration-200 group-hover:-translate-y-full">
@@ -97,6 +97,7 @@ const Page = () => {
                     <p className="text-sm text-center text-zinc-600">100+ Prfoessional Templates</p>
                 </div>
             </div>
+            <Testimonials />
         </header>
 
     )
